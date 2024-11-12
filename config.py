@@ -7,11 +7,11 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://FeriIrawan_occur
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
-app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
-    'pool_size': 5,
-    'max_overflow': 5,
-    'pool_timeout': 15 
-}
+# app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
+#     'pool_size': 5,
+#     'max_overflow': 5,
+#     'pool_timeout': 15 
+# }
 
 db = SQLAlchemy(app)
 
