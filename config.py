@@ -3,13 +3,14 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://UTSFeriIrawan0619_moonrecent:be64c1c79667ab59242762e97125b322d0f4ae3d@pys1s.h.filess.io:3306/UTSFeriIrawan0619_moonrecent'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://FeriIrawan_occurthou:a3ad6789f580535d35019177b86e7f5026ea3265@r2-t4.h.filess.io:3307/FeriIrawan_occurthou'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
 app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
     'pool_size': 3,
-    'max_overflow': 0
+    'max_overflow': 0,
+    'pool_timeout': 30 
 }
 
 db = SQLAlchemy(app)
